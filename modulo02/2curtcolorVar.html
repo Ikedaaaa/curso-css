@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentColor, Variáveis e Estilização por URL</title>
+    <style>
+        body {
+            background-color: ivory;
+        }
+
+        button {
+            background-color: white;
+            color: red;
+            width: 100px;
+            height: 50px;
+            border: 2px solid currentColor;
+            /*pega a cor que está na propriedade 'color'*/
+        }
+        :root{
+            --bg-color: blue;
+            --textColor: #fff;
+            --spacing: 20px;
+        }
+        /*#div1{
+            background-color: var(--bg-color);
+            color: var(--textColor);    Aplicação de estilo pelas variáveis
+            padding: var(--spacing);
+        }*/
+        .divs:target{
+            background-color: lawngreen;
+            padding: 10px; /*Estilização via URL*/
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#div1">Div01</a>
+    <a href="#div2">Div02</a>
+    
+    <div id="div1" class="divs">
+        <p>SQL (pronounced "ess-que-el") stands for Structured Query Language. SQL is used to communicate with a
+            database. According to ANSI (American National Standards Institute), it is the standard language for
+            relational database management systems.</p>
+    </div><br>
+    <div id="div2" class="divs">
+        <p>SQL (pronounced "ess-que-el") stands for Structured Query Language. SQL is used to communicate with a
+            database. According to ANSI (American National Standards Institute), it is the standard language for
+            relational database management systems.</p>
+    </div><br>
+    <button>Cadastrar</button>
+</body>
+
+</html>

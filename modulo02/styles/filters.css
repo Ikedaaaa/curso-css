@@ -1,0 +1,7 @@
+img{
+    margin: 40px 0 60px; 
+    filter: drop-shadow(10px 20px 5px #000) opacity(70%); /*<offset horizontal> <offset vertical> <desfoque> <cor>*/
+    /*blur(4px); brightness(50%); contrast(150%)*/
+    /*grayscale(100%) opacity(50%) saturate(50%) sepia(50%) hue-rotate(50deg)*/
+    /*invert(100%)*/
+}
