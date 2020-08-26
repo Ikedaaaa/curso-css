@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+#esquerda{
+    background-color: green;
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+#direita{
+    background-color: blue;
+    width: 50%;
+    height: 300px;
+    float: right;
+}

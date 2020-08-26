@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    /*permanece com a quantidade estipulada de largura,
+    sem alterar o padding estilulado,
+    o padding não altera mais o tamanho fixo do elemento*/
+}
+#conteudo{
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px green;
+}
+#conteudo1{
+    background-color: lightblue;
+    width: 300px;
+    height: 50px;
+    overflow: auto; /*hidden*/
+}
+#conteudo1 p {
+    opacity: 0.5; /*1 = padrão*/
+}
+#bloco{
+    background-color: green;
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    /*border-radius: 20px 50px 100px 200px; */
+}

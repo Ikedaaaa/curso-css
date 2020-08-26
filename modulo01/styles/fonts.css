@@ -1,0 +1,15 @@
+*{
+    font-size: 100%;
+}
+#p{
+    font-family: Arial, Verdana, sans-serif; /*Times, "Times New Roman", serif*/
+    font-variant: normal; /*small-caps*/
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.5em;/*1em: padrão do navegador = 16px     Unidade relativa [40px(alvo)/16px(contexto) = 2.5em]*/
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+}

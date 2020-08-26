@@ -1,0 +1,23 @@
+p{
+    color: red;
+    text-transform: capitalize;/*uppercase  /   lowercase*/
+    text-align: justify;
+    text-indent: 20px; /*o espaço de parágrafo de um texto*/
+    line-height: 20px;
+    direction: ltr; /*rtl = right to left*/
+    letter-spacing: 3px; /*5, 10, -2*/
+    word-spacing: 5px; /*-3, 0, 1, 3*/
+}
+h1{
+    text-align: left;
+    text-decoration: underline;
+    text-shadow: 1px -30px red; /*<posição horizontal> <posição vertical> <desfoque> <cor da sombra>*/
+}
+h2{
+    text-align: right;
+    text-decoration: overline;
+}
+h3{
+    text-align: center;
+    text-decoration: line-through;
+}

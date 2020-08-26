@@ -1,0 +1,51 @@
+body{
+    background-image: url(../img/beach.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom; /*left top,center, bottom*/
+    background-size: 100%; /*<width> <height>*/
+    background-attachment: fixed;
+    /*background: url(../img/beach.jpg) center center/100% 100% no-repeat fixed*/
+}
+.preload{
+    transition: none !important;
+}
+#conteudo{
+    width: 50%;
+    height: 1200px;
+    background-color: red;
+    position: relative;
+    float: left;
+}
+#texto{
+    width: 80%;
+    background-color: green;
+    text-align: justify;
+    position: absolute; /*fixed - fixo na tela, mas não na página, de acordo com o navegador*/
+    left: 0;  /*absolute - fixa em um canto da página, podendo ser apenas dentro de uma div*/
+    top:0;    /*para o absolute funcionar dentro de uma div, é preciso ter "position:relative" dentro da div*/
+}
+#border{
+    width: 50%;
+    height: 500px;
+    background-color: cornsilk;
+    float: right;
+    transition: all 2s linear;
+    /*height 2s linear 1s, background-color 2s linear 0s;*/
+    /*<propriedade> <duração> <tipo de transação> <delay>*/
+    /*transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: linear;*/
+}
+#border:hover{
+    background-color: purple;
+    height: 800px;
+}
+#border p{
+    border: solid 5px red; /*border-top, border-left...*/
+    /*border-style: solid; dotted, dashed
+    border-width: 5px;
+    border-color: red;*/
+    outline: dotted 5px green;
+    /*outline - linha externa ao elemento e
+                não trabalha com lados individuais*/
+}

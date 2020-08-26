@@ -1,0 +1,15 @@
+#cores{
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;/*hexa: #40b78c  nome pré-definido: turquoise*/
+    /*hsla(20,100%, 59%, 0.2 <opacity>); - hue, saturation and lightness*/
+    /*rgba(230,89,225, 0.5 <opacity>);*/
+}
+#gradientes{
+    width: 200px;
+    height: 200px;
+    background-color: #092857;
+    background: radial-gradient(blue, green);
+    /*linear-gradient(45deg, rgba(255,0,0,0), blue, green);*/
+    /*to left, to right, to top, to top left, 80deg, 45 deg*/
+}
