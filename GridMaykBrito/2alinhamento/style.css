@@ -1,0 +1,96 @@
+/*
+-Grid: Alinhamento
+ - Existem 6 propriedades para alinhamento
+   1. justify-content
+   2. align-content
+   3. justify-items
+   4. align-items
+   5. justify-self
+   6. align-self
+
+ - Separando em dois grupos:
+   1. justify e align: palavras antes do traço
+   2. content, items e self: palavras depois do traço
+
+
+ - Justify e Align
+   - Grid é bidimensional, eixo x e y
+     - Eixo x: posicionamento horizontal da esquerda para a direita
+     - Eixo y: posicionamento vertical, de cima para baixo
+
+ - Content, Items e Self
+   - Justando o 'justify', ou 'align', com esses elementos:
+     'content', 'align' e 'self', nós observamos nossas propriedades (Aquelas 6 propriedades acima)
+
+
+ - Content
+   - 'justify-content' e 'align-content' nos permite alinhar
+      o próprio grid, relativo ao espaço fora do grid
+     
+   - O uso dessas propriedades são raras, pois só é aplicado caso o grid seja menor que a área definida.
+   (Por exemplo, quando usamos em px o tamanho do grid, poderemos terminar com um grid pequeno, para o
+   tamanho da área do grid)
+
+   - Podemos usar 7 valores:
+     1. start
+     2. end
+     3. center
+     4. stretch
+     5. space-between
+     6. space-around
+     7. space-evenly
+
+ - Items
+   - 'justify-items' e 'align-items' vai permitir alinhar os itens do nosso grid, em qualquer espaço
+      disponível, na celula que ele habitar
+      (Cada quadrado do grid é uma celula, e está, por padrão em formato stretch)
+
+   - Podemos usar 4 valores:
+     1. start
+     2. end
+     3. center
+     4. stretch
+
+
+ - Self
+   - 'justify-self' e 'align-self' vai nos permitir alinhar o item em si.
+
+   - Faz a masma coisa que o 'justify-items' e 'align-items', porém,
+     aplicado diretamente no grid
+*/
+
+html,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*10px 10px 10px*/
+    grid-template-rows: 1fr 1fr 1fr;/*10px 10px 10px*/
+
+    grid-gap: 5px;
+
+    /*justify-content: space-evenly;*/ /*stretch, center, space-between...*/
+    /*align-content: space-evenly;*/
+    /*justify-items: center;*/
+    /*align-items: center;*/
+}
+
+.container > div{
+    background: #7159c1;
+    width: 50%;
+    height: 50%;
+}
+
+.center{
+    justify-self: center;
+    align-self: center;
+}

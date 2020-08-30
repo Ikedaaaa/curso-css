@@ -1,0 +1,92 @@
+/*
+Grid:
+- Bidimensional
+- Divisão de toda a página em linhas e colunas
+- Colocar elementos onde quiser nessa divisão
+
+
+Grid ou Flexbox
+
+- Grid: Duas dimesões (colunas e linhas)
+- Flexbox: Uma dimensão (ou coluna ou linha)
+- Um complementa o trabalho do outro
+
+- Verificar quais navegadores ainda não aceitam o Grid
+
+
+Propriedades:
+
+Separar em dois grupos:
+container e item(s)
+
+
+-Container:
+ - display: grid; Inicia o container informando que é um grid
+ - grid-template-columns; Começa a fatiar as colunas, informa quantas colunas o grid possui
+ - grid-template-rowa; O mesmo que o columns só que para linhas
+ - grid-gap = Informa os espaçamentos
+   - grid-row-gap: Espaçamento da linha
+   - grid-column-gap: Espaçamento da coluna
+ - grid-template-areas: delimita áreas
+
+ ... e mais 4 propriedades e **alinhamento**
+
+
+-Item(s):
+ - grid-column:Informa onde fica um item na coluna
+   - grid-column-start
+   - grid-column-end
+ - grid-row: Onde fica item na linha
+   - grid-row-start
+   - grid-row-end
+ - grid-area: Onde fica na area, caso use o grid-template-areas
+
+ ... e mais 2 propriedades de **alinhamento** 
+     
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    /*grid-gap: 20px;*/
+}
+
+header{
+    background: yellow;
+    grid-area: header;
+    /*grid-column: 1/3;
+    grid-row: 3/4;*/
+    /*grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;*/
+}
+main{
+    background: blue;
+    grid-area: main;
+    /*grid-column-start: 1;
+    grid-column-end: 2;*/
+}
+aside{
+    background: green;
+    grid-area: aside;
+    /*grid-column-start: 2;
+    grid-column-end: 3;*/
+}
+footer{
+    background: red;
+    grid-area: footer;
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+}
